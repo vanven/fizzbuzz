@@ -1,5 +1,9 @@
 class FizzBuzz
   def do_it
-    [1, 100]
+    fb_array = Array.new
+    for i in (1..100)
+      fb_array << i
+    end
+    return fb_array
   end
 end

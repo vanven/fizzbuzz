@@ -13,5 +13,9 @@ describe FizzBuzz do
  	it "first element is 1" do
  		expect(subject.do_it[0]).to eql(1)
  	end
+
+ 	it "last element is 100" do
+ 		expect(subject.do_it[99]).to eql(100)
+ 	end
  end
 end

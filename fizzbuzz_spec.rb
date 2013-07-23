@@ -17,5 +17,9 @@ describe FizzBuzz do
  	it "last element is 100" do
  		expect(subject.do_it[99]).to eql(100)
  	end
+
+  it "has third element equal to fizz" do
+    expect(subject.do_it[2]).to eql('fizz')
+  end
  end
 end

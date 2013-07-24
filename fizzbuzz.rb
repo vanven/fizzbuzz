@@ -6,8 +6,10 @@ class FizzBuzz
       if i%3 == 0
       	fb_array[i-1] = "fizz"
       end
+      if i%5 == 0
+      	fb_array[i-1] = "buzz"
+      end
     end
-    fb_array[4] = "buzz"
     return fb_array
   end
 end

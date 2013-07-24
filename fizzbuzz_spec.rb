@@ -14,8 +14,8 @@ describe FizzBuzz do
  		expect(subject.do_it[0]).to eql(1)
  	end
 
- 	it "last element is 100" do
- 		expect(subject.do_it[99]).to eql(100)
+ 	it "last element is buzz" do
+ 		expect(subject.do_it[99]).to eql('buzz')
  	end
 
   describe "every third element is fizz" do

@@ -24,8 +24,13 @@ describe FizzBuzz do
     end
   end
 
-  it "has fifth element equal to buzz" do
-    expect(subject.do_it[4]).to eql('buzz')
+  describe "every fifth element is buzz" do
+    it "has fifth element equal to buzz" do
+      expect(subject.do_it[4]).to eql('buzz')
+    end
+    it "has twentyfifth element equal to buzz" do
+      expect(subject.do_it[24]).to eql('buzz')
+    end
   end
  end
 end

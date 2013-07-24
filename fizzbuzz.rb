@@ -7,8 +7,7 @@ class FizzBuzz
       	fb_array[i-1] = "fizz"
       end
     end
+    fb_array[4] = "buzz"
     return fb_array
-
-
   end
 end

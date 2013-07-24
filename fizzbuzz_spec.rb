@@ -33,8 +33,13 @@ describe FizzBuzz do
     end
   end
 
-  it "has fifteenth element equal to FizzBuzz" do
-    expect(subject.do_it[14]).to eql('FizzBuzz')
+  describe "elements that are divisible by 3 and 5 are fizzbuzz" do
+    it "has fifteenth element equal to FizzBuzz" do
+      expect(subject.do_it[14]).to eql('FizzBuzz')
+    end
+    it "has thirtieth element equal to FizzBuzz" do
+      expect(subject.do_it[29]).to eql('FizzBuzz')
+    end
   end
  end
 end

@@ -23,5 +23,9 @@ describe FizzBuzz do
       expect(subject.do_it[2]).to eql('fizz')
     end
   end
+
+  it "has fifth element equal to buzz" do
+    expect(subject.do_it[4]).to eql('buzz')
+  end
  end
 end
